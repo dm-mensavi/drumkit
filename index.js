@@ -11,7 +11,7 @@ document.addEventListener("keydown", listen);
 
 
 function listen(event){
-    switch(this.innerHTML || event.key){
+    switch(this.innerHTML || (event.key).toLowercase){
         
         case("a"):
         var tom1 = new Audio("sounds/tom-1.mp3");
